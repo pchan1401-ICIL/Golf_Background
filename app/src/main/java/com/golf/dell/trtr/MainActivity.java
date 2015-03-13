@@ -34,7 +34,7 @@ SpriteBatcher sb = new SpriteBatcher(this,resourceIds,this);
        sb.setFontParams(R.string.audiowide_font,new FontParams().size(15));
 
         surface.setRenderer(sb);
-//surface.setRenderer(new SpriteBatcher(this,resourceIds,this));
+
 
 
 
@@ -46,9 +46,6 @@ SpriteBatcher sb = new SpriteBatcher(this,resourceIds,this);
         sb.draw(R.drawable.golf, new Rect(0,0,960,560), new Rect(0,0,sb.getViewWidth(),sb.getViewHeight()));
         sb.batchDraw(gl);
 
-
-        sb.draw(R.drawable.vv, new Rect(0,0,55,41),  new Rect(30,560,75,591));
-        //sb.draw(R.drawable.aa, new Rect(0,0,713,392),  new Rect(250,100,713,392));
 
         sb.drawText(R.string.audiowide_font, "Hit_Ball",100,500,1f,0xffff0000);
 
